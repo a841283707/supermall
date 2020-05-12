@@ -1,48 +1,3 @@
-// import Vue from 'vue'
-// import VueRouter from 'vue-router'
-//
-// //懒加载
-// const Home = () => import('../views/home/Home')
-// const Category = () => import('../views/category/Category')
-// const Cart = () => import('../views/cart/Cart')
-// const Profile = () => import('../views/profile/Profile')
-//
-//
-// //安装VueRouter插件
-// Vue.use(VueRouter)
-//
-// //启用懒加载
-// const routes=[
-//     {
-//         path: '',
-//         redirect: '/home'
-//     },
-//     {
-//         path: '/home',
-//         component: Home
-//     },
-//     {
-//         path: '/category',
-//         component: Category
-//     },
-//     {
-//         path: '/cart',
-//         component: Cart
-//     },
-//     {
-//         path: '/profile',
-//         component: Profile
-//     }
-// ]
-// //创建VueRouter
-// const router=new VueRouter({
-//     routes,
-//     //模式
-//     mode: 'history',
-// })
-//
-// //导出VueRouter
-// export default router
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -50,6 +5,7 @@ const Home = () => import('../views/home/Home')
 const Category = () => import('../views/category/Category')
 const Cart = () => import('../views/cart/Cart')
 const Profile = () => import('../views/profile/Profile')
+const Detail=()=>import('../views/detail/Detail')
 
 // 1.安装插件
 Vue.use(VueRouter)
@@ -75,6 +31,10 @@ const routes = [
     {
         path: '/profile',
         component: Profile
+    },
+    {
+        path: '/detail',
+        component: Detail
     }
 ]
 const router = new VueRouter({
