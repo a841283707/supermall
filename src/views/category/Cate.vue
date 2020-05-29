@@ -1,4 +1,5 @@
 <!--
+&lt;!&ndash;
 
 <template>
   <scroll-pullup :probe-type="probeType">
@@ -172,7 +173,7 @@
   /*overflow-y: scroll;*!*/
 }
 </style>
--->
+&ndash;&gt;
 <template>
   <div class="pullup">
     <div class="pullup-bswrapper">
@@ -379,3 +380,4 @@
 
 
 </style>
+-->
